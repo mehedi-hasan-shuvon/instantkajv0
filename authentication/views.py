@@ -15,7 +15,7 @@ def index(request):
             #  check w/ data
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
-            exists = User.objects.filter(email=email, password=password)
+            exists = User.objects.filter(email=email, password=password).exists()
             if exists:
                 return HttpResponseRedirect(reverse('success'))
             else:
