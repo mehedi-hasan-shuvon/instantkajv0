@@ -7,6 +7,6 @@ urlpatterns = [
 
    path('register/', views.register, name='register'),
    # path('register2/', views.register2, name='register2'),
-=======
+
  
 ]
